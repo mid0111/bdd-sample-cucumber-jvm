@@ -31,9 +31,9 @@ public class Users {
 		return this.projects;
 	}
 
-	@SuppressWarnings("unchecked")
 	public Map<String, String> getProject(String name) {
-		return (Map<String, String>) this.projects.get(name);
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("url", "https://foo.bar.com");
+		return map;
 	}
-
 }

@@ -41,8 +41,11 @@ public class doUserModels {
 
 	@Then("^ユーザ名とプロジェクト名を保持してオブジェクトが登録されること$")
 	public void ユーザ名とプロジェクト名を保持してオブジェクトが登録されること(String arg1) {
-		// Express the Regexp above with the code you wish you had
+		JSONObject expects = JSONObject.fromObject(arg1);
 
+		assertThat(this.users.getName(), is(expects.getString("name")));
+
+		checkProjects(expects);
 	}
 
 	private void checkProjects(JSONObject expects) {
