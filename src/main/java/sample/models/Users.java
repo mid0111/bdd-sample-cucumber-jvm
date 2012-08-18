@@ -1,5 +1,6 @@
 package sample.models;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -7,7 +8,7 @@ import net.sf.json.JSONObject;
 
 public class Users {
 
-	Map<String, Object> projects;
+	Map<String, Object> projects = new HashMap<String, Object>();
 	private String name;
 
 	public void add(String username, JSONObject projects) {

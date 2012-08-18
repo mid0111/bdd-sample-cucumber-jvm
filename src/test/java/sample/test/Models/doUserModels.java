@@ -15,6 +15,11 @@ public class doUserModels {
 	private String username;
 	private JSONObject projects = new JSONObject();
 
+	@Given("^ユーザ名 'tajima'$")
+	public void ユーザ名_tajima() {
+		this.username = "tajima";
+	}
+
 	@When("^ユーザを登録する$")
 	public void ユーザを登録する() {
 		this.users.add(this.username, this.projects);
