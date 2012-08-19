@@ -42,6 +42,7 @@ Describe Scenario File
 
 **[sample] (https://github.com/mid0111/bdd-sample-cucumber-jvm/blob/master/src/test/resource/sample/test/UserModels.feature)**
 
+**[sample described in japanese] (https://github.com/cucumber/cucumber/tree/master/examples/i18n/ja)**
 
 Compile Scenario File
 ---------------------
