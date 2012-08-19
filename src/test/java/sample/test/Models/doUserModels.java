@@ -2,9 +2,9 @@ package sample.test.Models;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
+import sample.models.Users;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
-import sample.models.Users;
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;
